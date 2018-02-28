@@ -3,6 +3,7 @@ mavros-service-call
 
 
 rosservice call /mavros/set_stream_rate 0 10 1
+
 or if you are using C++:
 
 ros::NodeHandle n;
