@@ -11,8 +11,10 @@ mavros::StreamRate srv;
 srv.request.stream_id = 0;
 srv.request.message_rate = 10;
 srv.request.on_off = 1;
+
 if(client.call(srv)){
+
     ROS_INFO("Service called");
-}else{
+    }else{
     ROS_INFO("Failed to call service");
-}
+    }
